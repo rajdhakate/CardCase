@@ -22,7 +22,7 @@ class LoginTextField: UITableViewCell {
         }
     }
 
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textField: UITextField?
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var iconViewWidth: NSLayoutConstraint!
     @IBOutlet weak var adjustIconFieldSpace: NSLayoutConstraint!
@@ -34,9 +34,9 @@ class LoginTextField: UITableViewCell {
     
     func reloadCell() {
         if fieldModel.value == nil {
-            textField.placeholder = fieldModel.placeholder
+            textField?.placeholder = fieldModel.placeholder
         } else {
-            textField.text = fieldModel.value
+            textField?.text = fieldModel.value
         }
         if fieldModel.icon == nil {
             iconViewWidth.constant = 0
@@ -44,19 +44,19 @@ class LoginTextField: UITableViewCell {
         } else {
             iconView.image = UIImage(named: fieldModel.icon!)
         }
-        textField.layer.borderWidth = 1
-        textField.layer.cornerRadius = 3
+        textField?.layer.borderWidth = 1
+        textField?.layer.cornerRadius = 3
         switch fieldModel.valid {
         case .empty:
-            textField.layer.borderColor = UIColor.lightGray.cgColor
+            textField?.layer.borderColor = UIColor.lightGray.cgColor
         case .valid:
-            textField.layer.borderColor = Utility.validateGreenColor().cgColor
+            textField?.layer.borderColor = Utility.validateGreenColor().cgColor
         case .invalid:
-            textField.layer.borderColor = Utility.validateRedColor().cgColor
+            textField?.layer.borderColor = Utility.validateRedColor().cgColor
         case .none:
-            textField.layer.borderColor = UIColor.lightGray.cgColor
+            textField?.layer.borderColor = UIColor.lightGray.cgColor
         case .some(_):
-            textField.layer.borderColor = UIColor.lightGray.cgColor
+            textField?.layer.borderColor = UIColor.lightGray.cgColor
         }
     }
 

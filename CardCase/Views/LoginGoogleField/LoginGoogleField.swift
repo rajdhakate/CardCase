@@ -18,10 +18,10 @@ class LoginGoogleField: UITableViewCell {
         // Initialization code
         
         googleButton.layer.cornerRadius = 3
-        googleButton.layer.shadowColor = UIColor.lightGray.cgColor
-        googleButton.layer.shadowOffset = CGSize(width: 0, height: 0)
-        googleButton.layer.shadowRadius = 5
-        googleButton.layer.shadowOpacity = 0.8
+//        googleButton.layer.shadowColor = UIColor.lightGray.cgColor
+//        googleButton.layer.shadowOffset = CGSize(width: 0, height: 0)
+//        googleButton.layer.shadowRadius = 5
+//        googleButton.layer.shadowOpacity = 0.8
         googleButton.layer.borderWidth = 1
         googleButton.layer.borderColor = UIColor.lightGray.cgColor
     }
@@ -30,6 +30,10 @@ class LoginGoogleField: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    override func prepareForReuse() {
+        googleButton = nil
     }
     
 }

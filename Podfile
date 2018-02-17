@@ -13,6 +13,7 @@ pod 'FBSDKShareKit'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'GoogleSignIn'
+pod 'IQKeyboardManagerSwift'
 
   target 'CardCaseTests' do
     inherit! :search_paths

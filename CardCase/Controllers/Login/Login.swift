@@ -12,6 +12,11 @@ import FBSDKLoginKit
 import Firebase
 import GoogleSignIn
 
+enum FormType {
+    case signin
+    case signup
+}
+
 class Login: UIViewController, UITableViewDataSource, UITableViewDelegate, FBSDKLoginButtonDelegate, GIDSignInUIDelegate {
     
     let cellID = "Cell"
@@ -19,15 +24,28 @@ class Login: UIViewController, UITableViewDataSource, UITableViewDelegate, FBSDK
     let googleCellID = "GoogleCell"
     
     var dataSource = [LoginTextModel]()
+    var formType: FormType = .signin
     
+    @IBOutlet weak var loginTypeLabel: UILabel!
+    @IBOutlet weak var changeLoginTypeButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var header: UIView!
+    @IBOutlet weak var proceedButton: UIButton!
     
     private func fieldModels() {
+        if dataSource.count>0 {
+            dataSource.removeAll()
+        }
         let email = LoginTextModel(id: "email", placeholder: "Email", value: nil, valid: .empty, icon: nil)
         let password = LoginTextModel(id: "password", placeholder: "Password", value: nil, valid: .empty, icon: nil)
         dataSource.append(email)
         dataSource.append(password)
+        if formType == .signup {
+            let username = LoginTextModel(id: "username", placeholder: "Username", value: nil, valid: .empty, icon: nil)
+            let confirmpassword = LoginTextModel(id: "confirmpassword", placeholder: "Comfirm Password", value: nil, valid: .empty, icon: nil)
+            dataSource.insert(username, at: 0)
+            dataSource.append(confirmpassword)
+        }
     }
     
     override func viewDidLoad() {
@@ -48,13 +66,26 @@ class Login: UIViewController, UITableViewDataSource, UITableViewDelegate, FBSDK
         header.frame = CGRect(x: 0, y: 0, width: Utility.screenWidth(), height: Utility.screenHeight()/3)
         tableView.tableHeaderView = header
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        self.tableView.addGestureRecognizer(tapGesture)
+        
         GIDSignIn.sharedInstance().uiDelegate = self
+        
+        proceedButton.layer.cornerRadius = proceedButton.layer.bounds.height/2
+        proceedButton.layer.shadowColor = UIColor.darkGray.cgColor
+        proceedButton.layer.shadowOffset = CGSize(width: 0, height: 0)
+        proceedButton.layer.shadowRadius = 4
+        proceedButton.layer.shadowOpacity = 0.7
         
         checkForCurrentUser()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.count + 2
+        if formType == .signin {
+            return dataSource.count + 2
+        } else {
+            return dataSource.count
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -62,19 +93,29 @@ class Login: UIViewController, UITableViewDataSource, UITableViewDelegate, FBSDK
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 3 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: googleCellID, for: indexPath) as! LoginGoogleField
-            cell.googleButton.addTarget(self, action: #selector(googleButtonAction(sender:)), for: .touchUpInside)
-            return cell
-        } else if indexPath.row == 2 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: fbCellID, for: indexPath) as! LoginFBField
-            cell.facebookButton.addTarget(self, action: #selector(facebookButtonAction(sender:)), for: .touchUpInside)
-            return cell
+        if formType == .signin {
+            if indexPath.row == 3 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: googleCellID, for: indexPath) as! LoginGoogleField
+                cell.googleButton.addTarget(self, action: #selector(googleButtonAction(sender:)), for: .touchUpInside)
+                return cell
+            } else if indexPath.row == 2 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: fbCellID, for: indexPath) as! LoginFBField
+                cell.facebookButton.addTarget(self, action: #selector(facebookButtonAction(sender:)), for: .touchUpInside)
+                return cell
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! LoginTextField
+                cell.fieldModel = dataSource[indexPath.row]
+                return cell
+            }
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! LoginTextField
             cell.fieldModel = dataSource[indexPath.row]
             return cell
         }
+    }
+    
+    @objc private func dismissKeyboard() {
+        self.view.endEditing(true)
     }
     
     private func checkForCurrentUser() {
@@ -93,6 +134,21 @@ class Login: UIViewController, UITableViewDataSource, UITableViewDelegate, FBSDK
                 
             }
         }
+    }
+    
+    @IBAction func changeLoginModeButtonAction(_ sender: UIButton) {
+        loginTypeLabel.text = sender.currentTitle
+        formType = (loginTypeLabel.text?.elementsEqual("in"))! ? FormType.signin : .signup
+        let title = (loginTypeLabel.text?.elementsEqual("in"))! ? "up" : "in"
+        sender.setTitle(title, for: .normal)
+        fieldModels()
+        var indexPaths = [IndexPath]()
+        for index in dataSource.indices {
+            let indexPath = IndexPath(row: index, section: 0)
+            indexPaths.append(indexPath)
+        }
+        let animation = formType == .signin ? UITableViewRowAnimation.right : .left
+        self.tableView.reloadRows(at: indexPaths, with: animation)
     }
     
     func loginButtonWillLogin(_ loginButton: FBSDKLoginButton!) -> Bool {

@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		61FC63AB45E532316BBC8668 /* Pods_CardCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0B3DE7CF6CEF6733A4917A /* Pods_CardCase.framework */; };
 		A23D6A04582060036BE69E88 /* Pods_CardCaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1479EB11E60BB0014808E783 /* Pods_CardCaseUITests.framework */; };
+		D5235E0820388261000DD8BA /* LoginFBField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5235E0320388261000DD8BA /* LoginFBField.xib */; };
+		D5235E0920388261000DD8BA /* LoginFBField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5235E0320388261000DD8BA /* LoginFBField.xib */; };
+		D5235E0A20388261000DD8BA /* LoginFBField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5235E0320388261000DD8BA /* LoginFBField.xib */; };
+		D5235E0B20388261000DD8BA /* LoginFBField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5235E0420388261000DD8BA /* LoginFBField.swift */; };
+		D5235E0C20388261000DD8BA /* LoginFBField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5235E0420388261000DD8BA /* LoginFBField.swift */; };
+		D5235E0D20388261000DD8BA /* LoginFBField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5235E0420388261000DD8BA /* LoginFBField.swift */; };
+		D5235E0E20388261000DD8BA /* LoginGoogleField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5235E0620388261000DD8BA /* LoginGoogleField.xib */; };
+		D5235E0F20388261000DD8BA /* LoginGoogleField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5235E0620388261000DD8BA /* LoginGoogleField.xib */; };
+		D5235E1020388261000DD8BA /* LoginGoogleField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5235E0620388261000DD8BA /* LoginGoogleField.xib */; };
+		D5235E1120388261000DD8BA /* LoginGoogleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5235E0720388261000DD8BA /* LoginGoogleField.swift */; };
+		D5235E1220388261000DD8BA /* LoginGoogleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5235E0720388261000DD8BA /* LoginGoogleField.swift */; };
+		D5235E1320388261000DD8BA /* LoginGoogleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5235E0720388261000DD8BA /* LoginGoogleField.swift */; };
 		D5741D72202E0F9600F6E089 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5741D70202E0F9600F6E089 /* Login.swift */; };
 		D5741D73202E0F9600F6E089 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5741D70202E0F9600F6E089 /* Login.swift */; };
 		D5741D74202E0F9600F6E089 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5741D70202E0F9600F6E089 /* Login.swift */; };
@@ -24,18 +36,6 @@
 		D57F6D26203048C8006C9D72 /* LoginTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F6D25203048C8006C9D72 /* LoginTextModel.swift */; };
 		D57F6D27203048C8006C9D72 /* LoginTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F6D25203048C8006C9D72 /* LoginTextModel.swift */; };
 		D57F6D28203048C8006C9D72 /* LoginTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F6D25203048C8006C9D72 /* LoginTextModel.swift */; };
-		D57F6D2E20308888006C9D72 /* LoginFBField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F6D2C20308888006C9D72 /* LoginFBField.swift */; };
-		D57F6D2F20308889006C9D72 /* LoginFBField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F6D2C20308888006C9D72 /* LoginFBField.swift */; };
-		D57F6D3020308889006C9D72 /* LoginFBField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F6D2C20308888006C9D72 /* LoginFBField.swift */; };
-		D57F6D3120308889006C9D72 /* LoginFBField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57F6D2D20308888006C9D72 /* LoginFBField.xib */; };
-		D57F6D3220308889006C9D72 /* LoginFBField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57F6D2D20308888006C9D72 /* LoginFBField.xib */; };
-		D57F6D3320308889006C9D72 /* LoginFBField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57F6D2D20308888006C9D72 /* LoginFBField.xib */; };
-		D57F6D36203089A5006C9D72 /* LoginGoogleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F6D34203089A5006C9D72 /* LoginGoogleField.swift */; };
-		D57F6D37203089A6006C9D72 /* LoginGoogleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F6D34203089A5006C9D72 /* LoginGoogleField.swift */; };
-		D57F6D38203089A6006C9D72 /* LoginGoogleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F6D34203089A5006C9D72 /* LoginGoogleField.swift */; };
-		D57F6D39203089A6006C9D72 /* LoginGoogleField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57F6D35203089A5006C9D72 /* LoginGoogleField.xib */; };
-		D57F6D3A203089A6006C9D72 /* LoginGoogleField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57F6D35203089A5006C9D72 /* LoginGoogleField.xib */; };
-		D57F6D3B203089A6006C9D72 /* LoginGoogleField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57F6D35203089A5006C9D72 /* LoginGoogleField.xib */; };
 		D57F6D3D2030A31F006C9D72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D57F6D3C2030A31E006C9D72 /* GoogleService-Info.plist */; };
 		D57F6D3E2030A31F006C9D72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D57F6D3C2030A31E006C9D72 /* GoogleService-Info.plist */; };
 		D57F6D3F2030A31F006C9D72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D57F6D3C2030A31E006C9D72 /* GoogleService-Info.plist */; };
@@ -76,15 +76,15 @@
 		6AB257E9F68A8FCB75F01339 /* Pods-CardCaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCaseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardCaseUITests/Pods-CardCaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		76B8F2BD83548167EE6CB5A1 /* Pods-CardCaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardCaseTests/Pods-CardCaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9309652993A8A1B380699010 /* Pods-CardCaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardCaseTests/Pods-CardCaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		D5235E0320388261000DD8BA /* LoginFBField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginFBField.xib; sourceTree = "<group>"; };
+		D5235E0420388261000DD8BA /* LoginFBField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFBField.swift; sourceTree = "<group>"; };
+		D5235E0620388261000DD8BA /* LoginGoogleField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginGoogleField.xib; sourceTree = "<group>"; };
+		D5235E0720388261000DD8BA /* LoginGoogleField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginGoogleField.swift; sourceTree = "<group>"; };
 		D5741D70202E0F9600F6E089 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		D5741D71202E0F9600F6E089 /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
 		D5741D79202E10A300F6E089 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		D5741D7A202E10A300F6E089 /* LoginTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginTextField.xib; sourceTree = "<group>"; };
 		D57F6D25203048C8006C9D72 /* LoginTextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextModel.swift; sourceTree = "<group>"; };
-		D57F6D2C20308888006C9D72 /* LoginFBField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFBField.swift; sourceTree = "<group>"; };
-		D57F6D2D20308888006C9D72 /* LoginFBField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginFBField.xib; sourceTree = "<group>"; };
-		D57F6D34203089A5006C9D72 /* LoginGoogleField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGoogleField.swift; sourceTree = "<group>"; };
-		D57F6D35203089A5006C9D72 /* LoginGoogleField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginGoogleField.xib; sourceTree = "<group>"; };
 		D57F6D3C2030A31E006C9D72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5BD6094202E0CE5004DDAEC /* CardCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BD6097202E0CE5004DDAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +156,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D5235E0220388261000DD8BA /* LoginFBField */ = {
+			isa = PBXGroup;
+			children = (
+				D5235E0320388261000DD8BA /* LoginFBField.xib */,
+				D5235E0420388261000DD8BA /* LoginFBField.swift */,
+			);
+			path = LoginFBField;
+			sourceTree = "<group>";
+		};
+		D5235E0520388261000DD8BA /* LoginGoogleField */ = {
+			isa = PBXGroup;
+			children = (
+				D5235E0620388261000DD8BA /* LoginGoogleField.xib */,
+				D5235E0720388261000DD8BA /* LoginGoogleField.swift */,
+			);
+			path = LoginGoogleField;
+			sourceTree = "<group>";
+		};
 		D5741D6F202E0F8200F6E089 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,26 +199,6 @@
 			);
 			path = LoginTextModel;
 			sourceTree = "<group>";
-		};
-		D57F6D2A20308872006C9D72 /* LoginFBField */ = {
-			isa = PBXGroup;
-			children = (
-				D57F6D2C20308888006C9D72 /* LoginFBField.swift */,
-				D57F6D2D20308888006C9D72 /* LoginFBField.xib */,
-			);
-			name = LoginFBField;
-			path = CardCase/Views/LoginFBField;
-			sourceTree = SOURCE_ROOT;
-		};
-		D57F6D2B20308872006C9D72 /* LoginGoogleField */ = {
-			isa = PBXGroup;
-			children = (
-				D57F6D34203089A5006C9D72 /* LoginGoogleField.swift */,
-				D57F6D35203089A5006C9D72 /* LoginGoogleField.xib */,
-			);
-			name = LoginGoogleField;
-			path = CardCase/Views/LoginGoogleField;
-			sourceTree = SOURCE_ROOT;
 		};
 		D5BD608B202E0CE5004DDAEC = {
 			isa = PBXGroup;
@@ -263,8 +261,6 @@
 		D5BD60C6202E0DD9004DDAEC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D57F6D2A20308872006C9D72 /* LoginFBField */,
-				D57F6D2B20308872006C9D72 /* LoginGoogleField */,
 				D57F6D24203048B6006C9D72 /* LoginTextModel */,
 			);
 			path = Models;
@@ -281,6 +277,8 @@
 		D5BD60C8202E0DD9004DDAEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D5235E0220388261000DD8BA /* LoginFBField */,
+				D5235E0520388261000DD8BA /* LoginGoogleField */,
 				D5741D78202E108700F6E089 /* LoginTextField */,
 			);
 			path = Views;
@@ -413,11 +411,11 @@
 				D5BD60A2202E0CE5004DDAEC /* LaunchScreen.storyboard in Resources */,
 				D57F6D3D2030A31F006C9D72 /* GoogleService-Info.plist in Resources */,
 				D5741D7E202E10A300F6E089 /* LoginTextField.xib in Resources */,
-				D57F6D39203089A6006C9D72 /* LoginGoogleField.xib in Resources */,
-				D57F6D3120308889006C9D72 /* LoginFBField.xib in Resources */,
+				D5235E0820388261000DD8BA /* LoginFBField.xib in Resources */,
 				D5BD609F202E0CE5004DDAEC /* Assets.xcassets in Resources */,
 				D5BD609D202E0CE5004DDAEC /* Main.storyboard in Resources */,
 				D5741D75202E0F9600F6E089 /* Login.xib in Resources */,
+				D5235E0E20388261000DD8BA /* LoginGoogleField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,9 +425,9 @@
 			files = (
 				D5741D76202E0F9600F6E089 /* Login.xib in Resources */,
 				D5741D7F202E10A300F6E089 /* LoginTextField.xib in Resources */,
+				D5235E0920388261000DD8BA /* LoginFBField.xib in Resources */,
 				D57F6D3E2030A31F006C9D72 /* GoogleService-Info.plist in Resources */,
-				D57F6D3220308889006C9D72 /* LoginFBField.xib in Resources */,
-				D57F6D3A203089A6006C9D72 /* LoginGoogleField.xib in Resources */,
+				D5235E0F20388261000DD8BA /* LoginGoogleField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,9 +437,9 @@
 			files = (
 				D5741D77202E0F9600F6E089 /* Login.xib in Resources */,
 				D5741D80202E10A300F6E089 /* LoginTextField.xib in Resources */,
+				D5235E0A20388261000DD8BA /* LoginFBField.xib in Resources */,
 				D57F6D3F2030A31F006C9D72 /* GoogleService-Info.plist in Resources */,
-				D57F6D3320308889006C9D72 /* LoginFBField.xib in Resources */,
-				D57F6D3B203089A6006C9D72 /* LoginGoogleField.xib in Resources */,
+				D5235E1020388261000DD8BA /* LoginGoogleField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,9 +622,9 @@
 				D5EC6650202E29380011B9EF /* Utility.swift in Sources */,
 				D5741D72202E0F9600F6E089 /* Login.swift in Sources */,
 				D57F6D26203048C8006C9D72 /* LoginTextModel.swift in Sources */,
-				D57F6D36203089A5006C9D72 /* LoginGoogleField.swift in Sources */,
+				D5235E1120388261000DD8BA /* LoginGoogleField.swift in Sources */,
 				D5741D7B202E10A300F6E089 /* LoginTextField.swift in Sources */,
-				D57F6D2E20308888006C9D72 /* LoginFBField.swift in Sources */,
+				D5235E0B20388261000DD8BA /* LoginFBField.swift in Sources */,
 				D5BD609A202E0CE5004DDAEC /* ViewController.swift in Sources */,
 				D5BD6098202E0CE5004DDAEC /* AppDelegate.swift in Sources */,
 			);
@@ -636,12 +634,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D57F6D2F20308889006C9D72 /* LoginFBField.swift in Sources */,
+				D5235E0C20388261000DD8BA /* LoginFBField.swift in Sources */,
 				D5EC6651202E29380011B9EF /* Utility.swift in Sources */,
 				D57F6D27203048C8006C9D72 /* LoginTextModel.swift in Sources */,
 				D5741D7C202E10A300F6E089 /* LoginTextField.swift in Sources */,
 				D5BD60AD202E0CE5004DDAEC /* CardCaseTests.swift in Sources */,
-				D57F6D37203089A6006C9D72 /* LoginGoogleField.swift in Sources */,
+				D5235E1220388261000DD8BA /* LoginGoogleField.swift in Sources */,
 				D5741D73202E0F9600F6E089 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,12 +648,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D57F6D3020308889006C9D72 /* LoginFBField.swift in Sources */,
+				D5235E0D20388261000DD8BA /* LoginFBField.swift in Sources */,
 				D5EC6652202E29380011B9EF /* Utility.swift in Sources */,
 				D57F6D28203048C8006C9D72 /* LoginTextModel.swift in Sources */,
 				D5741D7D202E10A300F6E089 /* LoginTextField.swift in Sources */,
 				D5BD60B8202E0CE6004DDAEC /* CardCaseUITests.swift in Sources */,
-				D57F6D38203089A6006C9D72 /* LoginGoogleField.swift in Sources */,
+				D5235E1320388261000DD8BA /* LoginGoogleField.swift in Sources */,
 				D5741D74202E0F9600F6E089 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
