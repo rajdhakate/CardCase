@@ -1,0 +1,6 @@
+framework module Pods_CardCase {
+  umbrella header "Pods-CardCase-umbrella.h"
+
+  export *
+  module * { export * }
+}
