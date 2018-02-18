@@ -10,6 +10,7 @@ import UIKit
 import FBSDKCoreKit
 import Firebase
 import GoogleSignIn
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -23,9 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         window?.makeKey()
         window?.makeKeyAndVisible()
         
-        let navigationController = UINavigationController(rootViewController: Login())
+        IQKeyboardManager.sharedManager().enable = true
         
-        window?.rootViewController = navigationController
+        window?.rootViewController = Login()
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         FirebaseApp.configure()

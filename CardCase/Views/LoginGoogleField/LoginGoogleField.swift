@@ -33,7 +33,7 @@ class LoginGoogleField: UITableViewCell {
     }
     
     override func prepareForReuse() {
-        googleButton = nil
+//        googleButton = nil
     }
     
 }

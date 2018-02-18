@@ -51,8 +51,6 @@ class Login: UIViewController, UITableViewDataSource, UITableViewDelegate, FBSDK
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.isNavigationBarHidden = true
-        
         fieldModels()
         
         let nib = UINib(nibName: "LoginTextField", bundle: nil)
@@ -148,7 +146,15 @@ class Login: UIViewController, UITableViewDataSource, UITableViewDelegate, FBSDK
             indexPaths.append(indexPath)
         }
         let animation = formType == .signin ? UITableViewRowAnimation.right : .left
+        self.tableView.reloadData()
         self.tableView.reloadRows(at: indexPaths, with: animation)
+    }
+    
+    @IBAction func loginButtonAction(_ sender: UIButton) {
+        let root = Home()
+        let navigationController = UINavigationController(rootViewController: root)
+        navigationController.navigationBar.prefersLargeTitles = true
+        self.present(navigationController, animated: true, completion: nil)
     }
     
     func loginButtonWillLogin(_ loginButton: FBSDKLoginButton!) -> Bool {

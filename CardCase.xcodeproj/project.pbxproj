@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		61FC63AB45E532316BBC8668 /* Pods_CardCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0B3DE7CF6CEF6733A4917A /* Pods_CardCase.framework */; };
 		A23D6A04582060036BE69E88 /* Pods_CardCaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1479EB11E60BB0014808E783 /* Pods_CardCaseUITests.framework */; };
+		D522EC1E2039CEEC00C89EEC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D522EC1C2039CEEC00C89EEC /* Home.swift */; };
+		D522EC1F2039CEEC00C89EEC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D522EC1C2039CEEC00C89EEC /* Home.swift */; };
+		D522EC202039CEEC00C89EEC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D522EC1C2039CEEC00C89EEC /* Home.swift */; };
+		D522EC212039CEEC00C89EEC /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = D522EC1D2039CEEC00C89EEC /* Home.xib */; };
+		D522EC222039CEEC00C89EEC /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = D522EC1D2039CEEC00C89EEC /* Home.xib */; };
+		D522EC232039CEEC00C89EEC /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = D522EC1D2039CEEC00C89EEC /* Home.xib */; };
 		D5235E0820388261000DD8BA /* LoginFBField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5235E0320388261000DD8BA /* LoginFBField.xib */; };
 		D5235E0920388261000DD8BA /* LoginFBField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5235E0320388261000DD8BA /* LoginFBField.xib */; };
 		D5235E0A20388261000DD8BA /* LoginFBField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5235E0320388261000DD8BA /* LoginFBField.xib */; };
@@ -76,6 +82,8 @@
 		6AB257E9F68A8FCB75F01339 /* Pods-CardCaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCaseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardCaseUITests/Pods-CardCaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		76B8F2BD83548167EE6CB5A1 /* Pods-CardCaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardCaseTests/Pods-CardCaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9309652993A8A1B380699010 /* Pods-CardCaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardCaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardCaseTests/Pods-CardCaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		D522EC1C2039CEEC00C89EEC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		D522EC1D2039CEEC00C89EEC /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
 		D5235E0320388261000DD8BA /* LoginFBField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginFBField.xib; sourceTree = "<group>"; };
 		D5235E0420388261000DD8BA /* LoginFBField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFBField.swift; sourceTree = "<group>"; };
 		D5235E0620388261000DD8BA /* LoginGoogleField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginGoogleField.xib; sourceTree = "<group>"; };
@@ -154,6 +162,15 @@
 				1479EB11E60BB0014808E783 /* Pods_CardCaseUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D522EC1B2039CEC600C89EEC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D522EC1C2039CEEC00C89EEC /* Home.swift */,
+				D522EC1D2039CEEC00C89EEC /* Home.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		D5235E0220388261000DD8BA /* LoginFBField */ = {
@@ -269,6 +286,7 @@
 		D5BD60C7202E0DD9004DDAEC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D522EC1B2039CEC600C89EEC /* Home */,
 				D5741D6F202E0F8200F6E089 /* Login */,
 			);
 			path = Controllers;
@@ -412,6 +430,7 @@
 				D57F6D3D2030A31F006C9D72 /* GoogleService-Info.plist in Resources */,
 				D5741D7E202E10A300F6E089 /* LoginTextField.xib in Resources */,
 				D5235E0820388261000DD8BA /* LoginFBField.xib in Resources */,
+				D522EC212039CEEC00C89EEC /* Home.xib in Resources */,
 				D5BD609F202E0CE5004DDAEC /* Assets.xcassets in Resources */,
 				D5BD609D202E0CE5004DDAEC /* Main.storyboard in Resources */,
 				D5741D75202E0F9600F6E089 /* Login.xib in Resources */,
@@ -427,6 +446,7 @@
 				D5741D7F202E10A300F6E089 /* LoginTextField.xib in Resources */,
 				D5235E0920388261000DD8BA /* LoginFBField.xib in Resources */,
 				D57F6D3E2030A31F006C9D72 /* GoogleService-Info.plist in Resources */,
+				D522EC222039CEEC00C89EEC /* Home.xib in Resources */,
 				D5235E0F20388261000DD8BA /* LoginGoogleField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +459,7 @@
 				D5741D80202E10A300F6E089 /* LoginTextField.xib in Resources */,
 				D5235E0A20388261000DD8BA /* LoginFBField.xib in Resources */,
 				D57F6D3F2030A31F006C9D72 /* GoogleService-Info.plist in Resources */,
+				D522EC232039CEEC00C89EEC /* Home.xib in Resources */,
 				D5235E1020388261000DD8BA /* LoginGoogleField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,6 +566,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -557,6 +579,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCarousel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,6 +646,7 @@
 				D5741D72202E0F9600F6E089 /* Login.swift in Sources */,
 				D57F6D26203048C8006C9D72 /* LoginTextModel.swift in Sources */,
 				D5235E1120388261000DD8BA /* LoginGoogleField.swift in Sources */,
+				D522EC1E2039CEEC00C89EEC /* Home.swift in Sources */,
 				D5741D7B202E10A300F6E089 /* LoginTextField.swift in Sources */,
 				D5235E0B20388261000DD8BA /* LoginFBField.swift in Sources */,
 				D5BD609A202E0CE5004DDAEC /* ViewController.swift in Sources */,
@@ -640,6 +664,7 @@
 				D5741D7C202E10A300F6E089 /* LoginTextField.swift in Sources */,
 				D5BD60AD202E0CE5004DDAEC /* CardCaseTests.swift in Sources */,
 				D5235E1220388261000DD8BA /* LoginGoogleField.swift in Sources */,
+				D522EC1F2039CEEC00C89EEC /* Home.swift in Sources */,
 				D5741D73202E0F9600F6E089 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,6 +679,7 @@
 				D5741D7D202E10A300F6E089 /* LoginTextField.swift in Sources */,
 				D5BD60B8202E0CE6004DDAEC /* CardCaseUITests.swift in Sources */,
 				D5235E1320388261000DD8BA /* LoginGoogleField.swift in Sources */,
+				D522EC202039CEEC00C89EEC /* Home.swift in Sources */,
 				D5741D74202E0F9600F6E089 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

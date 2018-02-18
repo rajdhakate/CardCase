@@ -32,7 +32,7 @@ class LoginFBField: UITableViewCell {
     }
     
     override func prepareForReuse() {
-        facebookButton = nil
+//        facebookButton = nil
     }
     
 }

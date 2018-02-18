@@ -14,6 +14,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'GoogleSignIn'
 pod 'IQKeyboardManagerSwift'
+pod 'iCarousel'
 
   target 'CardCaseTests' do
     inherit! :search_paths
