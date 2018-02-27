@@ -27,6 +27,31 @@
 		D5235E1120388261000DD8BA /* LoginGoogleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5235E0720388261000DD8BA /* LoginGoogleField.swift */; };
 		D5235E1220388261000DD8BA /* LoginGoogleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5235E0720388261000DD8BA /* LoginGoogleField.swift */; };
 		D5235E1320388261000DD8BA /* LoginGoogleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5235E0720388261000DD8BA /* LoginGoogleField.swift */; };
+		D53CDE8B20455DD200F33D2C /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDE8920455DD200F33D2C /* CardCell.swift */; };
+		D53CDE8C20455DD200F33D2C /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53CDE8A20455DD200F33D2C /* CardCell.xib */; };
+		D53CDE8F2045621500F33D2C /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDE8D2045621400F33D2C /* AccountCell.swift */; };
+		D53CDE902045621500F33D2C /* AccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53CDE8E2045621400F33D2C /* AccountCell.xib */; };
+		D53CDE9920456E7900F33D2C /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDE9720456E7900F33D2C /* AddController.swift */; };
+		D53CDE9A20456E7900F33D2C /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDE9720456E7900F33D2C /* AddController.swift */; };
+		D53CDE9B20456E7900F33D2C /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDE9720456E7900F33D2C /* AddController.swift */; };
+		D53CDE9C20456E7900F33D2C /* AddController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53CDE9820456E7900F33D2C /* AddController.xib */; };
+		D53CDE9D20456E7900F33D2C /* AddController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53CDE9820456E7900F33D2C /* AddController.xib */; };
+		D53CDE9E20456E7900F33D2C /* AddController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53CDE9820456E7900F33D2C /* AddController.xib */; };
+		D53CDEA32045753700F33D2C /* AddCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDEA12045753700F33D2C /* AddCard.swift */; };
+		D53CDEA42045753700F33D2C /* AddCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDEA12045753700F33D2C /* AddCard.swift */; };
+		D53CDEA52045753700F33D2C /* AddCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDEA12045753700F33D2C /* AddCard.swift */; };
+		D53CDEA62045753700F33D2C /* AddCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53CDEA22045753700F33D2C /* AddCard.xib */; };
+		D53CDEA72045753700F33D2C /* AddCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53CDEA22045753700F33D2C /* AddCard.xib */; };
+		D53CDEA82045753700F33D2C /* AddCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53CDEA22045753700F33D2C /* AddCard.xib */; };
+		D53CDEAB2045754300F33D2C /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDEA92045754300F33D2C /* AddAccount.swift */; };
+		D53CDEAC2045754300F33D2C /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDEA92045754300F33D2C /* AddAccount.swift */; };
+		D53CDEAD2045754300F33D2C /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDEA92045754300F33D2C /* AddAccount.swift */; };
+		D53CDEAE2045754300F33D2C /* AddAccount.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53CDEAA2045754300F33D2C /* AddAccount.xib */; };
+		D53CDEAF2045754300F33D2C /* AddAccount.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53CDEAA2045754300F33D2C /* AddAccount.xib */; };
+		D53CDEB02045754300F33D2C /* AddAccount.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53CDEAA2045754300F33D2C /* AddAccount.xib */; };
+		D53CDEBC2045769000F33D2C /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDEBB2045769000F33D2C /* AppUtility.swift */; };
+		D53CDEBD2045769000F33D2C /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDEBB2045769000F33D2C /* AppUtility.swift */; };
+		D53CDEBE2045769000F33D2C /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53CDEBB2045769000F33D2C /* AppUtility.swift */; };
 		D5741D72202E0F9600F6E089 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5741D70202E0F9600F6E089 /* Login.swift */; };
 		D5741D73202E0F9600F6E089 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5741D70202E0F9600F6E089 /* Login.swift */; };
 		D5741D74202E0F9600F6E089 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5741D70202E0F9600F6E089 /* Login.swift */; };
@@ -88,6 +113,17 @@
 		D5235E0420388261000DD8BA /* LoginFBField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFBField.swift; sourceTree = "<group>"; };
 		D5235E0620388261000DD8BA /* LoginGoogleField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginGoogleField.xib; sourceTree = "<group>"; };
 		D5235E0720388261000DD8BA /* LoginGoogleField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginGoogleField.swift; sourceTree = "<group>"; };
+		D53CDE8920455DD200F33D2C /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		D53CDE8A20455DD200F33D2C /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		D53CDE8D2045621400F33D2C /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
+		D53CDE8E2045621400F33D2C /* AccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountCell.xib; sourceTree = "<group>"; };
+		D53CDE9720456E7900F33D2C /* AddController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		D53CDE9820456E7900F33D2C /* AddController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddController.xib; sourceTree = "<group>"; };
+		D53CDEA12045753700F33D2C /* AddCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCard.swift; sourceTree = "<group>"; };
+		D53CDEA22045753700F33D2C /* AddCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCard.xib; sourceTree = "<group>"; };
+		D53CDEA92045754300F33D2C /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
+		D53CDEAA2045754300F33D2C /* AddAccount.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAccount.xib; sourceTree = "<group>"; };
+		D53CDEBB2045769000F33D2C /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		D5741D70202E0F9600F6E089 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		D5741D71202E0F9600F6E089 /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
 		D5741D79202E10A300F6E089 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
@@ -169,6 +205,10 @@
 			children = (
 				D522EC1C2039CEEC00C89EEC /* Home.swift */,
 				D522EC1D2039CEEC00C89EEC /* Home.xib */,
+				D53CDE8920455DD200F33D2C /* CardCell.swift */,
+				D53CDE8A20455DD200F33D2C /* CardCell.xib */,
+				D53CDE8D2045621400F33D2C /* AccountCell.swift */,
+				D53CDE8E2045621400F33D2C /* AccountCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -190,6 +230,42 @@
 			);
 			path = LoginGoogleField;
 			sourceTree = "<group>";
+		};
+		D53CDE9620456E7900F33D2C /* AddController */ = {
+			isa = PBXGroup;
+			children = (
+				D53CDE9720456E7900F33D2C /* AddController.swift */,
+				D53CDE9820456E7900F33D2C /* AddController.xib */,
+			);
+			path = AddController;
+			sourceTree = "<group>";
+		};
+		D53CDE9F204574F700F33D2C /* AddCard */ = {
+			isa = PBXGroup;
+			children = (
+				D53CDEA12045753700F33D2C /* AddCard.swift */,
+				D53CDEA22045753700F33D2C /* AddCard.xib */,
+			);
+			path = AddCard;
+			sourceTree = "<group>";
+		};
+		D53CDEA0204574F700F33D2C /* AddAccount */ = {
+			isa = PBXGroup;
+			children = (
+				D53CDEA92045754300F33D2C /* AddAccount.swift */,
+				D53CDEAA2045754300F33D2C /* AddAccount.xib */,
+			);
+			path = AddAccount;
+			sourceTree = "<group>";
+		};
+		D53CDEBA2045768600F33D2C /* AppUtility */ = {
+			isa = PBXGroup;
+			children = (
+				D53CDEBB2045769000F33D2C /* AppUtility.swift */,
+			);
+			name = AppUtility;
+			path = CardCase/AppUtility;
+			sourceTree = SOURCE_ROOT;
 		};
 		D5741D6F202E0F8200F6E089 /* Login */ = {
 			isa = PBXGroup;
@@ -286,6 +362,10 @@
 		D5BD60C7202E0DD9004DDAEC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D53CDEBA2045768600F33D2C /* AppUtility */,
+				D53CDEA0204574F700F33D2C /* AddAccount */,
+				D53CDE9F204574F700F33D2C /* AddCard */,
+				D53CDE9620456E7900F33D2C /* AddController */,
 				D522EC1B2039CEC600C89EEC /* Home */,
 				D5741D6F202E0F8200F6E089 /* Login */,
 			);
@@ -428,11 +508,16 @@
 			files = (
 				D5BD60A2202E0CE5004DDAEC /* LaunchScreen.storyboard in Resources */,
 				D57F6D3D2030A31F006C9D72 /* GoogleService-Info.plist in Resources */,
+				D53CDEA62045753700F33D2C /* AddCard.xib in Resources */,
 				D5741D7E202E10A300F6E089 /* LoginTextField.xib in Resources */,
+				D53CDE9C20456E7900F33D2C /* AddController.xib in Resources */,
+				D53CDEAE2045754300F33D2C /* AddAccount.xib in Resources */,
 				D5235E0820388261000DD8BA /* LoginFBField.xib in Resources */,
 				D522EC212039CEEC00C89EEC /* Home.xib in Resources */,
 				D5BD609F202E0CE5004DDAEC /* Assets.xcassets in Resources */,
+				D53CDE902045621500F33D2C /* AccountCell.xib in Resources */,
 				D5BD609D202E0CE5004DDAEC /* Main.storyboard in Resources */,
+				D53CDE8C20455DD200F33D2C /* CardCell.xib in Resources */,
 				D5741D75202E0F9600F6E089 /* Login.xib in Resources */,
 				D5235E0E20388261000DD8BA /* LoginGoogleField.xib in Resources */,
 			);
@@ -444,10 +529,13 @@
 			files = (
 				D5741D76202E0F9600F6E089 /* Login.xib in Resources */,
 				D5741D7F202E10A300F6E089 /* LoginTextField.xib in Resources */,
+				D53CDEAF2045754300F33D2C /* AddAccount.xib in Resources */,
 				D5235E0920388261000DD8BA /* LoginFBField.xib in Resources */,
 				D57F6D3E2030A31F006C9D72 /* GoogleService-Info.plist in Resources */,
 				D522EC222039CEEC00C89EEC /* Home.xib in Resources */,
 				D5235E0F20388261000DD8BA /* LoginGoogleField.xib in Resources */,
+				D53CDE9D20456E7900F33D2C /* AddController.xib in Resources */,
+				D53CDEA72045753700F33D2C /* AddCard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,10 +545,13 @@
 			files = (
 				D5741D77202E0F9600F6E089 /* Login.xib in Resources */,
 				D5741D80202E10A300F6E089 /* LoginTextField.xib in Resources */,
+				D53CDEB02045754300F33D2C /* AddAccount.xib in Resources */,
 				D5235E0A20388261000DD8BA /* LoginFBField.xib in Resources */,
 				D57F6D3F2030A31F006C9D72 /* GoogleService-Info.plist in Resources */,
 				D522EC232039CEEC00C89EEC /* Home.xib in Resources */,
 				D5235E1020388261000DD8BA /* LoginGoogleField.xib in Resources */,
+				D53CDE9E20456E7900F33D2C /* AddController.xib in Resources */,
+				D53CDEA82045753700F33D2C /* AddCard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,14 +733,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53CDEA32045753700F33D2C /* AddCard.swift in Sources */,
 				D5EC6650202E29380011B9EF /* Utility.swift in Sources */,
+				D53CDEBC2045769000F33D2C /* AppUtility.swift in Sources */,
 				D5741D72202E0F9600F6E089 /* Login.swift in Sources */,
 				D57F6D26203048C8006C9D72 /* LoginTextModel.swift in Sources */,
+				D53CDE9920456E7900F33D2C /* AddController.swift in Sources */,
+				D53CDEAB2045754300F33D2C /* AddAccount.swift in Sources */,
 				D5235E1120388261000DD8BA /* LoginGoogleField.swift in Sources */,
 				D522EC1E2039CEEC00C89EEC /* Home.swift in Sources */,
+				D53CDE8B20455DD200F33D2C /* CardCell.swift in Sources */,
 				D5741D7B202E10A300F6E089 /* LoginTextField.swift in Sources */,
 				D5235E0B20388261000DD8BA /* LoginFBField.swift in Sources */,
 				D5BD609A202E0CE5004DDAEC /* ViewController.swift in Sources */,
+				D53CDE8F2045621500F33D2C /* AccountCell.swift in Sources */,
 				D5BD6098202E0CE5004DDAEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,11 +758,15 @@
 				D5235E0C20388261000DD8BA /* LoginFBField.swift in Sources */,
 				D5EC6651202E29380011B9EF /* Utility.swift in Sources */,
 				D57F6D27203048C8006C9D72 /* LoginTextModel.swift in Sources */,
+				D53CDE9A20456E7900F33D2C /* AddController.swift in Sources */,
+				D53CDEAC2045754300F33D2C /* AddAccount.swift in Sources */,
 				D5741D7C202E10A300F6E089 /* LoginTextField.swift in Sources */,
 				D5BD60AD202E0CE5004DDAEC /* CardCaseTests.swift in Sources */,
 				D5235E1220388261000DD8BA /* LoginGoogleField.swift in Sources */,
+				D53CDEBD2045769000F33D2C /* AppUtility.swift in Sources */,
 				D522EC1F2039CEEC00C89EEC /* Home.swift in Sources */,
 				D5741D73202E0F9600F6E089 /* Login.swift in Sources */,
+				D53CDEA42045753700F33D2C /* AddCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,11 +777,15 @@
 				D5235E0D20388261000DD8BA /* LoginFBField.swift in Sources */,
 				D5EC6652202E29380011B9EF /* Utility.swift in Sources */,
 				D57F6D28203048C8006C9D72 /* LoginTextModel.swift in Sources */,
+				D53CDE9B20456E7900F33D2C /* AddController.swift in Sources */,
+				D53CDEAD2045754300F33D2C /* AddAccount.swift in Sources */,
 				D5741D7D202E10A300F6E089 /* LoginTextField.swift in Sources */,
 				D5BD60B8202E0CE6004DDAEC /* CardCaseUITests.swift in Sources */,
 				D5235E1320388261000DD8BA /* LoginGoogleField.swift in Sources */,
+				D53CDEBE2045769000F33D2C /* AppUtility.swift in Sources */,
 				D522EC202039CEEC00C89EEC /* Home.swift in Sources */,
 				D5741D74202E0F9600F6E089 /* Login.swift in Sources */,
+				D53CDEA52045753700F33D2C /* AddCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
