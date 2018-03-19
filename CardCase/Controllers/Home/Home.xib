@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Home" customModule="CardCase" customModuleProvider="target">
             <connections>
+                <outlet property="bannerView" destination="d0h-zs-jzm" id="v0P-p3-t7h"/>
                 <outlet property="carouselView" destination="AmL-VR-gF8" id="khM-Zn-mTi"/>
                 <outlet property="tableview" destination="48I-Kj-T2F" id="u1F-5B-lN2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -44,6 +45,14 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="Rrt-lJ-GYa"/>
             <point key="canvasLocation" x="516.5" y="-180"/>
+        </view>
+        <view contentMode="scaleToFill" id="d0h-zs-jzm">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="HRY-Dz-EYv"/>
+            <point key="canvasLocation" x="517" y="35"/>
         </view>
     </objects>
 </document>

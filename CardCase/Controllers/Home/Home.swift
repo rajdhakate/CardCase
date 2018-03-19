@@ -8,19 +8,22 @@
 
 import UIKit
 import iCarousel
+import GoogleMobileAds
 
 enum ViewType {
     case CARD
     case ACCOUNT
 }
 
-class Home: UIViewController, iCarouselDelegate, iCarouselDataSource, UITableViewDataSource, UITableViewDelegate, AddControllerDelegate {
+class Home: UIViewController, iCarouselDelegate, iCarouselDataSource, UITableViewDataSource, UITableViewDelegate, AddControllerDelegate, GADBannerViewDelegate {
     
     static let cardCell = "CardCell"
     static let accountCell = "AccountCell"
     
     var viewType: ViewType = .CARD
+    var bannerAd: GADBannerView!
     
+    @IBOutlet var bannerView: UIView!
     @IBOutlet var carouselView: iCarousel!
     @IBOutlet weak var tableview: UITableView!
     
@@ -37,14 +40,27 @@ class Home: UIViewController, iCarouselDelegate, iCarouselDataSource, UITableVie
         self.navigationController?.textColor()
     }
     
+    private func loadAdView() {
+        bannerAd = GADBannerView(adSize: kGADAdSizeBanner)
+        bannerAd.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerAd.rootViewController = self
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
+        bannerAd.delegate = self
+        bannerAd.load(request)
+        bannerView.addSubview(bannerAd)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.setupNavigationbar()
         self.setupTableView()
-        
-//        self.tableview.tableHeaderView = carouselView
-//        self.setupCarousel()
+        self.loadAdView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
     private func setupTableView() {
@@ -146,5 +162,45 @@ class Home: UIViewController, iCarouselDelegate, iCarouselDataSource, UITableVie
         
         view.addSubview(cardView)
         return view
+    }
+    
+    
+    /// Tells the delegate an ad request loaded an ad.
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        print("adViewDidReceiveAd")
+        bannerView.alpha = 0
+        UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseIn, animations: {
+            self.tableview.tableHeaderView = bannerView
+        }) { (completed) in
+            bannerView.alpha = 1
+        }
+    }
+    
+    /// Tells the delegate an ad request failed.
+    func adView(_ bannerView: GADBannerView,
+                didFailToReceiveAdWithError error: GADRequestError) {
+        print("adView:didFailToReceiveAdWithError: \(error.localizedDescription)")
+    }
+    
+    /// Tells the delegate that a full-screen view will be presented in response
+    /// to the user clicking on an ad.
+    func adViewWillPresentScreen(_ bannerView: GADBannerView) {
+        print("adViewWillPresentScreen")
+    }
+    
+    /// Tells the delegate that the full-screen view will be dismissed.
+    func adViewWillDismissScreen(_ bannerView: GADBannerView) {
+        print("adViewWillDismissScreen")
+    }
+    
+    /// Tells the delegate that the full-screen view has been dismissed.
+    func adViewDidDismissScreen(_ bannerView: GADBannerView) {
+        print("adViewDidDismissScreen")
+    }
+    
+    /// Tells the delegate that a user click will open another app (such as
+    /// the App Store), backgrounding the current app.
+    func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
+        print("adViewWillLeaveApplication")
     }
 }

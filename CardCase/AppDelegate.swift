@@ -11,6 +11,7 @@ import FBSDKCoreKit
 import Firebase
 import GoogleSignIn
 import IQKeyboardManagerSwift
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -33,6 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
+        
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-7475349085402864~4596773999")
         
         return true
     }
